@@ -1,0 +1,20 @@
+#Difference between PRINT and RETURN
+
+def function_that_prints():
+    print("I printed")
+
+def function_that_returns():
+    return "I returned"
+
+f1 = function_that_prints()
+#Automatically prints "I printed"
+
+f2 = function_that_returns()
+#Does not print anything to the console. Only stored a value
+
+print(f1)
+#The value stored in f1 is NONE because the function did not have a return statement
+
+print(f2)
+#The function_that_returns stored the RETURN value in f2
+#So when we printed f2, we saw "I returned" 
