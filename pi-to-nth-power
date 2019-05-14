@@ -1,0 +1,14 @@
+#Find pi to the nth number of decimal
+
+import math
+
+def calculate_pi():
+	while True:
+		try:
+			calcpi = int(input("To what digit of pi would you like to calculate? :"))
+			print('%.*f' % (calcpi, math.pi))
+			break
+		except ValueError:
+			print('Only integers please!')
+
+calculate_pi()
